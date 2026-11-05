@@ -1,0 +1,40 @@
+# Secrets - never upload
+.env
+
+# Python
+service/.venv/
+service/generated/
+service/logs/
+__pycache__/
+*.pyc
+
+# Plugin build output
+plugin/target/
+
+# Created by the server when it runs (worlds, logs, player data)
+server/eula.txt
+server/world*/
+server/logs/
+server/cache/
+server/libraries/
+server/versions/
+server/crash-reports/
+server/.console_history
+server/ops.json
+server/whitelist.json
+server/banned-*.json
+server/usercache.json
+server/version_history.json
+server/plugins/.paper-remapped/
+server/plugins/bStats/
+server/plugins/spark/
+server/plugins/Citizens/*
+!server/plugins/Citizens/config.yml
+server/plugins/WorldEdit/*
+!server/plugins/WorldEdit/config.yml
+
+# Third-party downloads (see README)
+server/paper.jar
+server/plugins/Citizens-*.jar
+server/plugins/worldedit-bukkit-*.jar
+service/components/BuilderGPT/public/Faithful*.zip

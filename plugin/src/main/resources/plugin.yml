@@ -1,0 +1,33 @@
+name: BuilderBot
+version: '${project.version}'
+main: com.builderbot.BuilderBotPlugin
+api-version: '1.21'
+description: Minecraft bot that follows players and builds structures based on chat commands
+author: Aaron
+website: https://github.com/builderbot
+
+depend:
+  - Citizens
+
+commands:
+  bot:
+    description: Main builder bot command
+    usage: |
+      /<command> summon - Spawn your builder bot
+      /<command> follow <on|off> - Toggle bot following
+      /<command> despawn - Remove your bot
+      /<command> build <type> - Start building a structure
+      /<command> aibuild <description> - AI-powered structure generation
+    aliases: [builderbot, bb]
+  testorientation:
+    description: Test the orientation system (places colored blocks)
+    usage: /<command>
+    aliases: [testorient, to]
+
+permissions:
+  builderbot.use:
+    description: Allow using basic BuilderBot commands
+    default: true
+  builderbot.aibuild:
+    description: Allow using AI-powered building (/bot aibuild)
+    default: op

@@ -1,0 +1,24 @@
+# Builder Bot Configuration
+
+bot:
+  # Distance in blocks for bot to follow player
+  follow-distance: 3.0
+
+  # Delay in ticks between placing each block (20 ticks = 1 second)
+  # Lower = faster building, higher = slower but more dramatic
+  build-delay-ticks: 2
+
+  # How long to wait for player response before timing out conversation (seconds)
+  conversation-timeout-seconds: 120
+
+structures:
+  treehouse:
+    small:
+      height: 8
+      platform-size: 5
+    medium:
+      height: 12
+      platform-size: 7
+    large:
+      height: 16
+      platform-size: 9
